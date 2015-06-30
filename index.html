@@ -79,10 +79,12 @@
 <body>
 
     <form class="cc-form">
-        <input type="text" id="card" placeholder="Credit card number" name="addCreditCardNumber" pattern="[0-9]*" required>
+        <label for="cc-number">Name on card</label>
+        <input type="text" class="cc-number" id="cc-number" placeholder="Credit card number" name="addCreditCardNumber" pattern="[0-9]*" required>
+        <label for="cc-name">Name on card</label>
         <!-- <input name="addCreditCardNumber" class="cc-input cc-number" id="cardNumber" type="text" pattern="[0-9]*" placeholder="Card number"> -->
         <!-- <label for="holdername">Name on card</label> -->
-        <input type="text" id="holdername" placeholder="Name on card" name="name" required>
+        <input type="text" class="cc-name" id="cc-name" placeholder="Name on card" name="name" required>
         <!-- <label for="card">Credit Card Number</label> -->
 
         <!-- <fieldset class="cc-expiration"> -->
