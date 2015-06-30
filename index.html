@@ -79,18 +79,17 @@
 <body>
 
     <form class="cc-form">
-        <label for="cc-number">Name on card</label>
-        <input type="text" class="cc-number" id="cc-number" placeholder="Credit card number" name="addCreditCardNumber" pattern="[0-9]*" required>
-        <label for="cc-name">Name on card</label>
-        <!-- <input name="addCreditCardNumber" class="cc-input cc-number" id="cardNumber" type="text" pattern="[0-9]*" placeholder="Card number"> -->
-        <!-- <label for="holdername">Name on card</label> -->
-        <input type="text" class="cc-name" id="cc-name" placeholder="Name on card" name="name" required>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" class="cc-number" id="cardNumber" placeholder="Credit card number" name="addCreditCardNumber" pattern="[0-9]*" required>
+        <label for="cardName">Name on card</label>
+        <input type="text" class="cc-name" id="cardName" placeholder="Name on card" name="name" required>
+        <label for="month">Expiration Date</label>
+        <input id="month" type="text" placeholder="MM" name="month" required>
+        <input id="year" type="text" placeholder="YYYY" name="year" required>
         <!-- <label for="card">Credit Card Number</label> -->
 
         <!-- <fieldset class="cc-expiration"> -->
-            <!-- <label for="month">Expiration Date</label> -->
-            <input id="month" type="text" placeholder="MM" name="month" required>
-            <input id="year" type="text" placeholder="YYYY" name="year" required>
+
             <!-- <input name="month" class="cc-input cc-expiration--month" id="cardNumber" type="text" pattern="[0-9]*" placeholder="MM" value="">
             <input name="year" class="cc-input cc-expiration--year" id="cardNumber" type="text" pattern="[0-9]*" placeholder="YY" value=""> -->
         <!-- </fieldset> -->
