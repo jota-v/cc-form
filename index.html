@@ -29,74 +29,22 @@
 
 
     <!-- Demo specific styles -->
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            padding: 100px 10px 0;
-            font-family: Helvetica, Arial, sans-serif;
-            text-align: center;
-            color: #333;
-            background: #fff;
-        }
-
-        .cc-form {
-            max-width: 400px;
-            padding: 25px;
-            margin: 0 auto;
-            background: #f1f1f1;
-            border-radius: 10px;
-        }
-
-        .cc-form .cc-input {
-            display: block;
-            margin-bottom: 10px;
-            width: 100%;
-        }
-
-        .cc-exp  .cc-input {
-            width: 49%;
-            float: left;
-        }
-
-        .cc-exp  .cc-input:last-child {
-            float: right;
-        }
-
-        .cc-exp:after,
-        .cc-exp:before {
-            display: table;
-            content: "";
-        }
-
-        .cc-exp:after {
-            clear: both;
-        }
-
-        .ch-btn {
-            display: block;
-            width: 100%;
-            margin-top: 20px;
-        }
-    </style>
     <!-- End specific styles -->
 </head>
 
 <body>
 
     <form class="cc-form">
-        <label for="cardNumber">Credit Card Number:</label>
-        <input type="text" class="cc-input" id="cardNumber" placeholder="Credit card number" name="addCreditCardNumber" pattern="[0-9]*" required>
-        <label for="cardName">Name on card</label>
-        <input type="text" class="cc-input" id="cardName" placeholder="Name on card" name="name" required>
+        <label for="cardNumber"><span class="ch-icon-card"></span>Card number:</label>
+        <input type="text" class="cc-input" id="cardNumber" name="addCreditCardNumber" pattern="[0-9]*" required>
+        <label for="cardName"><span class="ch-icon-user"></span>Name on card:</label>
+        <input type="text" class="cc-input" id="cardName" name="name" required>
         <fieldset class="cc-exp">
-            <label for="month">Expiration Date</label>
+            <label for="month"><span class="ch-icon-calendar"></span>Expiration date:</label>
             <input type="text" class="cc-input cc-input--month" id="month" placeholder="MM" name="month" pattern="[0-9]*" required>
             <input type="text" class="cc-input cc-input--year" id="year" placeholder="YYYY" name="year" pattern="[0-9]*" required>
         </fieldset>
-        <button type="submit" name="button" class="ch-btn">Submit</button>
+        <button type="submit" name="button" class="ch-btn ch-btn-large">Submit</button>
     </form>
     <!-- <form action="/gp/aw/ya/p" method="post"><input type="hidden" name="si" value="190-6700118-5036964">
  <input type="hidden" name="pm" value="newCreditCard">
