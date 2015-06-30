@@ -76,7 +76,7 @@ gulp.task('clean', require('del').bind(null, ['dist','.dist-demo']));
 gulp.task('serve', ['default'], function() {
     browserSync({
         notify: false,
-        https: true,
+        // https: true,
         port: 9000,
         server: {
             baseDir: ['./','dist']
@@ -93,7 +93,7 @@ gulp.task('serve', ['default'], function() {
     gulp.watch('src/images/**/*', ['images']);
 });
 
-gulp.task('default', ['styles', 'js', 'images'], function() {
+gulp.task('default', ['styles'], function() {
     return gulp.src('dist/**/*').pipe($.size({
         title: 'default'
     }));

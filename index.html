@@ -29,45 +29,22 @@
 
 
     <!-- Demo specific styles -->
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            padding: 100px 10px 0;
-            font-family: Helvetica, Arial, sans-serif;
-            text-align: center;
-            color: #333;
-            background: #FFF059;
-        }
-
-        .card-input {
-            margin-top: 120px;
-            display: block;
-            width: 100%;
-        }
-    </style>
     <!-- End specific styles -->
 </head>
 
 <body>
-
-    <input name="addCreditCardNumber" class="card-input" id="cardNumber" type="text" pattern="[0-9]*">
-
-
-    <script>
-        var md = new MobileDetect(window.navigator.userAgent);
-        if (md.mobile()) {
-            document.write('<script src="http://static.mlstatic.com/org-img/ch/vendor/jquery/jquery-1.10.2.min.js"></'+'script>');
-            document.write('<script src="http://static.mlstatic.com/org-img/ch/mobile/1.1.1/chico.min.js"></'+'script>');
-        } else {
-            document.write('<script src="http://static.mlstatic.com/org-img/ch/vendor/jquery/jquery-1.10.2.min.js"></'+'script>');
-            document.write('<script src="http://static.mlstatic.com/org-img/ch/ui/1.1.1/chico.min.js"></'+'script>');
-        }
-    </script>
-
-    <script src="dist/main.js"></script>
-
+    <h1>Scan credit card demo</h1>
+    <form class="cc-form">
+        <label for="cardNumber"><span class="ch-icon-card"></span>Card number:</label>
+        <input type="text" class="cc-input" id="cardNumber" name="addCreditCardNumber" pattern="[0-9]*" required>
+        <label for="cardName"><span class="ch-icon-user"></span>Name on card:</label>
+        <input type="text" class="cc-input" id="cardName" name="name" required>
+        <fieldset class="cc-exp">
+            <label for="month"><span class="ch-icon-calendar"></span>Expiration date:</label>
+            <input type="text" class="cc-input cc-input--month" id="month" placeholder="MM" name="month" pattern="[0-9]*" required>
+            <input type="text" class="cc-input cc-input--year" id="year" placeholder="YYYY" name="year" pattern="[0-9]*" required>
+        </fieldset>
+        <button type="submit" name="button" class="ch-btn ch-btn-large">Submit</button>
+    </form>
 </body>
 </html>
