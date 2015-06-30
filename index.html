@@ -79,20 +79,22 @@
 <body>
 
     <form class="cc-form">
-        <label for="cardNumber">Card Number:</label>
-        <input type="text" class="cc-number" id="cardNumber" placeholder="Credit card number" name="addCreditCardNumber" pattern="[0-9]*" required>
+        <label for="cardNumber">Credit Card Number:</label>
+        <input type="text" class="cc-input" id="cardNumber" placeholder="Credit card number" name="addCreditCardNumber" pattern="[0-9]*" required>
         <label for="cardName">Name on card</label>
-        <input type="text" class="cc-name" id="cardName" placeholder="Name on card" name="name" required>
-        <label for="month">Expiration Date</label>
-        <input id="month" type="text" placeholder="MM" name="month" required>
-        <input id="year" type="text" placeholder="YYYY" name="year" required>
+        <input type="text" class="cc-input" id="cardName" placeholder="Name on card" name="name" required>
+        <fieldset class="cc-exp">
+            <label for="month">Expiration Date</label>
+            <input type="text" class="cc-input cc-exp--month" id="month" placeholder="MM" name="month" pattern="[0-9]*" required>
+            <input type="text" class="cc-input cc-exp--month" id="year" placeholder="YYYY" name="year" pattern="[0-9]*" required>
+        </fieldset>
         <!-- <label for="card">Credit Card Number</label> -->
 
-        <!-- <fieldset class="cc-expiration"> -->
+        <!--  -->
 
             <!-- <input name="month" class="cc-input cc-expiration--month" id="cardNumber" type="text" pattern="[0-9]*" placeholder="MM" value="">
             <input name="year" class="cc-input cc-expiration--year" id="cardNumber" type="text" pattern="[0-9]*" placeholder="YY" value=""> -->
-        <!-- </fieldset> -->
+        <!--  -->
         <button type="submit" name="button" class="ch-btn">Submit</button>
     </form>
     <!-- <form action="/gp/aw/ya/p" method="post"><input type="hidden" name="si" value="190-6700118-5036964">
