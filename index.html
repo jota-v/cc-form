@@ -39,11 +39,36 @@
             font-family: Helvetica, Arial, sans-serif;
             text-align: center;
             color: #333;
-            background: #FFF059;
+            background: #fff;
         }
 
-        .card-input {
-            margin-top: 120px;
+        .cc-form {
+            max-width: 400px;
+            padding: 25px;
+            margin: 0 auto;
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .cc-form .cc-input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .cc-form .cc-expiration input {
+            width: 50%;
+            float: left;
+        }
+
+        .cc-expiration:after,
+        .cc-expiration:before {
+            display: table-row;
+            clear: both;
+            content: "";
+        }
+
+        .ch-btn {
             display: block;
             width: 100%;
         }
@@ -53,8 +78,15 @@
 
 <body>
 
-    <input name="addCreditCardNumber" class="card-input" id="cardNumber" type="text" pattern="[0-9]*">
-
+    <form class="cc-form">
+        <input name="addCreditCardNumber" class="cc-input cc-number" id="cardNumber" type="text" pattern="[0-9]*" placeholder="Card number">
+        <input name="name" class="cc-input cc-name" id="cardNumber" type="text" placeholder="Name on card">
+        <fieldset class="cc-expiration">
+            <input name="month" class="cc-input cc-expiration--month" id="cardNumber" type="text" pattern="[0-9]*" placeholder="MM">
+            <input name="year" class="cc-input cc-expiration--year" id="cardNumber" type="text" pattern="[0-9]*" placeholder="YY">
+        </fieldset>
+        <button type="submit" name="button" class="ch-btn">Submit</button>
+    </form>
 
     <script>
         var md = new MobileDetect(window.navigator.userAgent);
