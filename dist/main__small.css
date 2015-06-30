@@ -1,0 +1,30 @@
+.hero-unit {
+  display: block;
+  max-width: 330px;
+  padding: 15px;
+  margin: 15px auto;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  text-align: left; }
+  .hero-unit__img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px; }
+  .hero-unit__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px; }
+  .hero-unit p {
+    margin-bottom: 4px; }
+  .hero-unit ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    list-style: disc; }
+  .hero-unit small {
+    display: block; }
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9tYWluX19zbWFsbC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBO0VBQ2EsZUFBQTtFQUNULGlCQUFXO0VBQ1gsY0FBUztFQUNELGtCQUFBO0VBQ0csZ0JBQUE7RUFDRSxpQkFBQTtFQUNiLGtCQUFhO0VBQ2IsaUJBQVksRUFBQTtFQUVoQjtJQUNRLGVBQVM7SUFDRixZQUFBO0lBQ0csaUJBQUE7SUFDRixvQkFBQSxFQUFBO0VBR2hCO0lBQ21CLGdCQUFBO0lBQ1gsaUJBQWE7SUFDYixpQkFBYTtJQUNFLG9CQUFBLEVBQUE7RUFHWjtJQUNZLG1CQUFBLEVBQUE7RUFHdkI7SUFDUSxtQkFBYztJQUNDLG9CQUFBO0lBQ2YsaUJBQVksRUFBQTtFQUdwQjtJQUNRLGVBQVMsRUFBQSIsImZpbGUiOiJtYWluX19zbWFsbC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbi8vIERlbGV0ZSB0aGlzOlxuXG4uaGVyby11bml0IHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBtYXgtd2lkdGg6IDMzMHB4O1xuICAgIHBhZGRpbmc6IDE1cHg7XG4gICAgbWFyZ2luOiAxNXB4IGF1dG87XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGZvbnQtd2VpZ2h0OiAyMDA7XG4gICAgbGluZS1oZWlnaHQ6IDMwcHg7XG4gICAgdGV4dC1hbGlnbjogbGVmdDtcblxuICAgICZfX2ltZyB7XG4gICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgbWF4LXdpZHRoOjMwMHB4O1xuICAgICAgICBtYXJnaW46IDAgYXV0byAyMHB4O1xuICAgIH1cblxuICAgICZfX3RpdGxlIHtcbiAgICAgICAgZm9udC1zaXplOiAyNnB4O1xuICAgICAgICBmb250LXdlaWdodDogNzAwO1xuICAgICAgICBsaW5lLWhlaWdodDogMS4zO1xuICAgICAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICAgIH1cblxuICAgIHAge1xuICAgICAgICBtYXJnaW4tYm90dG9tOiA0cHg7XG4gICAgfVxuXG4gICAgdWwge1xuICAgICAgICBwYWRkaW5nLWxlZnQ6IDIwcHg7XG4gICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gICAgICAgIGxpc3Qtc3R5bGU6IGRpc2M7XG4gICAgfVxuXG4gICAgc21hbGwge1xuICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICB9XG59XG4iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */

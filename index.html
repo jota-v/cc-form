@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>
+        creditcard
+    </title>
+
+    <link rel="shortcut icon" href="http://static.mlstatic.com/org-img/ui/ml/favicon/favicon-1.0.0.ico"/>
+
+    <script src="mobile-detect.js"></script>
+    <script>
+        var md = new MobileDetect(window.navigator.userAgent);
+        if (md.mobile()) {
+            document.write('<link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/mobile/1.1.1/chico.min.css"><link rel="stylesheet" href="dist/main__small.css">');
+        } else {
+            document.write('<link rel="stylesheet" href="http://static.mlstatic.com/org-img/ch/ui/1.1.1/chico.min.css"><link rel="stylesheet" href="dist/main__large.css">');
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="styles/main.css">
+    <![endif]-->
+
+
+    <!-- Demo specific styles -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 100px 10px 0;
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: center;
+            color: #333;
+            background: #FFF059;
+        }
+
+        .card-input {
+            margin-top: 120px;
+            display: block;
+            width: 100%;
+        }
+    </style>
+    <!-- End specific styles -->
+</head>
+
+<body>
+
+    <input name="addCreditCardNumber" class="card-input" id="cardNumber" type="text" pattern="[0-9]*">
+
+
+    <script>
+        var md = new MobileDetect(window.navigator.userAgent);
+        if (md.mobile()) {
+            document.write('<script src="http://static.mlstatic.com/org-img/ch/vendor/jquery/jquery-1.10.2.min.js"></'+'script>');
+            document.write('<script src="http://static.mlstatic.com/org-img/ch/mobile/1.1.1/chico.min.js"></'+'script>');
+        } else {
+            document.write('<script src="http://static.mlstatic.com/org-img/ch/vendor/jquery/jquery-1.10.2.min.js"></'+'script>');
+            document.write('<script src="http://static.mlstatic.com/org-img/ch/ui/1.1.1/chico.min.js"></'+'script>');
+        }
+    </script>
+
+    <script src="dist/main.js"></script>
+
+</body>
+</html>
